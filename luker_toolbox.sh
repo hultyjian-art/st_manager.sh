@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 钓鱼佬的工具箱 - Luker Termux 管理脚本 (Luker 版)
-# 原作: 10091009mc (Angler's Toolbox, 面向 Luker, v1.3.5)
+# 原作: 10091009mc (Angler's Toolbox, 面向 SillyTavern, v1.3.5)
 # Luker 改编: hultyjian-art (fork 自 mc10091009/st_manager.sh)
 # 改动: ① 安装源指向 funnycups/Luker (Luker 分支发行版, 自带酒馆助手适配)
 #       ② 安装后自动预装图床后端插件 lig-local-images (免导入插图, 插件零改动
