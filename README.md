@@ -1,5 +1,29 @@
 # Android 手机部署 SillyTavern 教程（Termux 一键脚本）
 
+---
+
+## 🐟 Luker 一键版（hultyjian-art 改编）
+
+> 把下方「一键安装 SillyTavern」改为**一键安装 Luker**（SillyTavern 分支发行版，自带酒馆助手适配），
+> 并在安装完成后**自动预装图床后端插件** [`lig-local-images`](https://github.com/hultyjian-art/lig-local-images)。
+
+Termux（F-Droid 或 GitHub Releases 版）里执行：
+
+```bash
+bash <(curl -s https://raw.githubusercontent.com/hultyjian-art/st_manager.sh/main/luker_toolbox.sh)
+```
+
+- 安装源：`funnycups/Luker`（原脚本为 `SillyTavern/SillyTavern`）；依赖检测、端口处理、
+  备份、多实例、开机自启等逻辑与原版一致。
+- 预装插件后，在酒馆「图库」里注册手机存储中的任意文件夹（如 `/storage/emulated/0/AA/美化`），
+  即可浏览缩略图并**免导入直插** —— Termux 的 targetSdk=28 + `termux-setup-storage` 授权后，
+  Node 可直接按路径读取公共存储，无分区存储过滤。
+- 首次使用请先在 Termux 里运行一次 `termux-setup-storage` 并同意存储授权（一次性操作）。
+- 酒馆助手前端界面脚本仍需手动导入：`酒馆助手脚本-本地图片展示-阶段4合并版.json`。
+- 原版脚本 `angler_toolbox.sh` 保留在本仓库，可继续用于原版 SillyTavern。
+
+---
+
 > 作者：10091009mc  
 > 脚本名称：Angler Toolbox（`angler_toolbox.sh`）  
 > 适用场景：**仅 Android + Termux**，不需要电脑  
